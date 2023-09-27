@@ -1,0 +1,110 @@
+/* Colors */
+
+/*
+primary color : #F3EED9
+secondary color : #824936
+thirdary color : #222C2A
+*/
+
+/* Fonts */
+
+/* 
+
+Fonts
+1 | Roboto Light font-size: 18px;
+2 | Playfair Display Black font-size: 60px;
+3 | Playfair Display Black font-size: 36px;
+4 | Roboto Regular font-size: 21px;
+
+*/
+/*
+      SPACING SYSTEM (px)
+      2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+
+      FONT SIZE SYSTEM (px)
+      10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+*/
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Roboto", sans-serif;
+}
+.container {
+  width: 100%;
+  max-width: 1128px;
+  margin: 0 auto;
+}
+.head__row {
+  width: 65%;
+  margin: 0 auto;
+}
+.row {
+  padding: 80px;
+  gap: 60px;
+}
+.img {
+  max-width: 100%;
+  height: auto;
+}
+.header {
+  min-height: 660px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #f3eed9;
+  text-align: center;
+}
+.header__intro {
+  font-size: 1.125rem;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+.header__title {
+  font-family: "Playfair Display", serif;
+  font-size: 3.75rem;
+  font-weight: 900;
+  color: #824936;
+}
+
+.title {
+  text-align: center;
+  font-family: "Playfair Display", serif;
+  font-size: 2.25rem;
+  color: #824936;
+  margin-bottom: 44px;
+}
+.hero__quality-txt {
+  display: flex;
+  justify-content: space-between;
+}
+.txt {
+  font-size: 1.313rem;
+  font-weight: 400;
+}
+.hero__quality-txt p:last-child {
+  margin-left: 48px;
+}
+.hero__made {
+  background-color: #222c2a;
+  display: flex;
+}
+.hero__made-title {
+  text-align: start;
+}
+.hero__made-title,
+.hero__made-txt {
+  color: #fff;
+}
+.hero__made-img {
+  border: none;
+}
+.hero__created {
+  display: flex;
+  background-color: #824936;
+}
