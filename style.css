@@ -6,8 +6,9 @@ secondary color : #824936
 thirdary color : #222C2A
 */
 
-/* Fonts */
-
+/* Fonts 
+font-family: "Roboto", sans-serif; 
+font-family: "Playfair Display", serif; 
 /* 
 
 Fonts
@@ -24,6 +25,12 @@ Fonts
       FONT SIZE SYSTEM (px)
       10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
 */
+
+:root {
+  --primary-clr: #f3eed9;
+  --secondary-clr: #222c2a;
+  --thirdary-clr: #824936;
+}
 *,
 *::after,
 *::before {
@@ -33,6 +40,8 @@ Fonts
 }
 body {
   font-family: "Roboto", sans-serif;
+  line-height: 1.6;
+  color: #222c2a;
 }
 .container {
   width: 100%;
@@ -57,26 +66,28 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: #f3eed9;
+  background-color: var(--primary-clr);
   text-align: center;
 }
 .header__intro {
   font-size: 1.125rem;
   font-weight: 400;
   text-transform: uppercase;
+  letter-spacing: 10px;
 }
 .header__title {
   font-family: "Playfair Display", serif;
   font-size: 3.75rem;
   font-weight: 900;
-  color: #824936;
+  color: var(--thirdary-clr);
+  line-height: 1;
 }
 
 .title {
   text-align: center;
   font-family: "Playfair Display", serif;
   font-size: 2.25rem;
-  color: #824936;
+  color: var(--thirdary-clr);
   margin-bottom: 44px;
 }
 .hero__quality-txt {
@@ -91,7 +102,7 @@ body {
   margin-left: 48px;
 }
 .hero__made {
-  background-color: #222c2a;
+  background-color: var(--secondary-clr);
   display: flex;
 }
 .hero__made-title {
@@ -106,7 +117,7 @@ body {
 }
 .hero__created {
   display: flex;
-  background-color: #824936;
+  background-color: var(--thirdary-clr);
 }
 
 @media (max-width: 1300px) {
