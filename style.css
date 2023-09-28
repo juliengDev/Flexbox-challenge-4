@@ -108,3 +108,19 @@ body {
   display: flex;
   background-color: #824936;
 }
+
+@media (max-width: 1300px) {
+  .hero__quality-txt {
+    flex-direction: column;
+    gap: 30px;
+  }
+  .hero__quality-txt p:last-child {
+    margin: 0;
+  }
+}
+@media (max-width: 900px) {
+  .hero__made,
+  .hero__created {
+    flex-direction: column;
+  }
+}
